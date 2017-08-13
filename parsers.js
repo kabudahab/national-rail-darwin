@@ -259,6 +259,9 @@ function parseCallingPointList (soapCallingPointList) {
         case 'lt4:et':
           callingPoint.et = element.val
           break
+        case 'lt4:at':
+          callingPoint.at = element.val
+          break
       }
     })
     callingPoints.push(callingPoint)
