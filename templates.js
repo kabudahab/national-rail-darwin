@@ -10,7 +10,7 @@ var getServiceBoardStandardRequest =
 `<ldb:numRows>$$ROWS$$</ldb:numRows>` +
 `<ldb:crs>$$FROM$$</ldb:crs>` +
 `<ldb:filterCrs>$$DESTINATION$$</ldb:filterCrs>` +
-`<ldb:filterType>to</ldb:filterType>` +
+`<ldb:filterType>$$FILTER$$</ldb:filterType>` +
 `<ldb:timeOffset>$$TIMEOFFSET$$</ldb:timeOffset>` +
 `<ldb:timeWindow>$$TIMEWINDOW$$</ldb:timeWindow>`
 
