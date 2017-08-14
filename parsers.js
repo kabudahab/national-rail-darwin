@@ -210,6 +210,9 @@ function parseStandardService (service) {
       case 'lt4:delayReason':
         train.delayReason = element.val
         break
+      case 'lt4:cancelReason':
+        train.cancelReason = element.val
+        break
       case 'lt4:serviceID':
         train.serviceId = element.val
         break
@@ -224,6 +227,9 @@ function parseStandardService (service) {
         break
       case 'lt5:rsid':
         train.rsid = element.val
+        break
+      case 'lt4:isCancelled':
+        train.isCancelled = element.val
         break
       case 'lt5:origin':
         var origin = element.childNamed('lt4:location')
