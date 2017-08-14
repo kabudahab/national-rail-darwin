@@ -229,7 +229,7 @@ function parseStandardService (service) {
         train.rsid = element.val
         break
       case 'lt4:isCancelled':
-        train.isCancelled = element.val
+        train.isCancelled = (element.val === 'true')
         break
       case 'lt5:origin':
         var origin = element.childNamed('lt4:location')
